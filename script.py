@@ -39,13 +39,12 @@ def ask_user_if_door_opened():
 def capture_can_data():
     """Capture les données CAN et les enregistre dans candump.log."""
     
-    Changer de répertoire si nécessaire
-    os.chdir("ICSim/builddir")
+    #Changer de répertoire si nécessaire
+    #os.chdir("ICSim/builddir")
     
     # Capture des données CAN via candump et les enregistrer dans candump.log
-    print("Capture des données CAN avec candump...")
-    os.system("candump -c -l vcan0")
-    
+    #print("Capture des données CAN avec candump...")
+    #os.system("candump -c -l vcan0")
 
     # Spécifie le répertoire contenant les fichiers
     directory = '.'  # Change ceci si nécessaire
